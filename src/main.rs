@@ -1,4 +1,7 @@
+mod convert;
+
 fn main(){
+    convert::convert();
     let tup = (500, 6.1, 1);
     let (x, y, z) = tup;
 
