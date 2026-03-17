@@ -1,7 +1,9 @@
 mod convert;
+mod fibon;
 
 fn main(){
     convert::convert();
+    fibon::fibon();
     let tup = (500, 6.1, 1);
     let (x, y, z) = tup;
 
