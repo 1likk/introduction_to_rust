@@ -1,6 +1,7 @@
 mod convert;
 mod fibon;
 mod month;
+mod structs;
 
 fn main(){
     month::month();
@@ -9,6 +10,7 @@ fn main(){
     let tup = (500, 6.1, 1);
     let (x, y, z) = tup;
 
+    structs::mains();
     println!("{x}");
     condition();
     loops();
