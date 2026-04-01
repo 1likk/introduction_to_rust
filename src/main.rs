@@ -7,6 +7,7 @@ fn main(){
     month::month();
     convert::convert();
     fibon::fibon();
+    rectangle::main();
     let tup = (500, 6.1, 1);
     let (x, y, z) = tup;
 
