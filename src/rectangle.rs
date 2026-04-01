@@ -35,3 +35,4 @@ pub fn main() {
     println!("Can rec1 hold rec2? {}", rec1.can_hold(&rec2));
     println!("Can rec1 hold rec3? {}", rec1.can_hold(&rec3));
 }
+
