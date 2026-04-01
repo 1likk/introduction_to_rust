@@ -5,10 +5,10 @@ mod structs;
 mod rectangle;
 
 fn main(){
-    month::month();
+    rectangle::main();
     convert::convert();
     fibon::fibon();
-    rectangle::main();
+    month::month();
     let tup = (500, 6.1, 1);
     let (x, y, z) = tup;
 
