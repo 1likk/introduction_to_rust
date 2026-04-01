@@ -2,6 +2,7 @@ mod convert;
 mod fibon;
 mod month;
 mod structs;
+mod rectangle;
 
 fn main(){
     month::month();
