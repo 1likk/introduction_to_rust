@@ -35,7 +35,7 @@ enum Coin {
     Quarter(UsState),
 }
 
-fn value_in_cents(coin: Coin) -> {
+fn value_in_cents(coin: Coin) {
     match coin {
         Coin::Penny => 1,
         Coin::Nickel => 5,
