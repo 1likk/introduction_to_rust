@@ -14,6 +14,22 @@ struct Point<T> {
     y: T,
 }
 
+impl <T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
+enum Option<T> { 
+    Some(T),
+    None,
+}
+
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
+
 fn main() {
     let number_list = vec![34, 50, 42, 60, 78, 90];
 
