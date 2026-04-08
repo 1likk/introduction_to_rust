@@ -2,6 +2,44 @@ pub trait Summary {
     fn summarize(&self) -> String;
 }
 
+pub trait Quantity {
+    fn amounting(&self) -> u32;
+}
+
+pub struct Flower {
+    name: String,
+    count: u32,
+}
+
+pub struct Warehouse {
+    total_stock: f64,
+}
+
+impl Summary for Flower {
+    fn summarize(&self) -> String {
+        format!("Flower: {}, in stock: {} pc.", self.name, self.count)
+    }
+}
+
+impl Quantity for Flower {
+    fn amounting(&self) -> u32 {
+        self.count 
+    }
+}
+
+impl Quantity for Warhouse {
+    fn amounting(&self) -> u32 {
+        self.total_stock as u32
+    }
+}
+
+
+
+/* 
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
+
 pub struct NewsArticle {
     pub headline: String,
     pub location: String,
@@ -27,3 +65,4 @@ impl Summary for SocialPost {
         format!("{}: {}", self.username, self.content)
     }
 }
+*/
