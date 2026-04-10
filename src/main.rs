@@ -31,7 +31,7 @@ fn condition(){
 }
 
 fn loops(){
-    let mut n = 0;
+    let mut n: i32 = 0;
     loop {
         println!("again again");
         n = n + 1;
